@@ -1066,9 +1066,8 @@
             </a>
 
             <a
-                href="mealheiro-digital.apk"
+                href="https://github.com/itspr4taspt/mealheiro-digital/releases/download/v1.0.0/mealheiro-digital.apk"
                 class="nav-download"
-                download
             >
                 Descarregar
             </a>
@@ -1115,9 +1114,8 @@
             <!-- DOWNLOAD APK -->
 
             <a
-                href="mealheiro-digital.apk"
+                href="https://github.com/itspr4taspt/mealheiro-digital/releases/download/v1.0.0/mealheiro-digital.apk"
                 class="download-button"
-                download
             >
 
                 <div class="download-icon">
@@ -1437,9 +1435,8 @@
 
 
     <a
-        href="mealheiro-digital.apk"
+        href="https://github.com/itspr4taspt/mealheiro-digital/releases/download/v1.0.0/mealheiro-digital.apk"
         class="download-main"
-        download
     >
 
         <span>
@@ -1519,7 +1516,7 @@
     /* Feedback ao clicar no download */
 
     document.querySelectorAll(
-        'a[download]'
+        'a[href*="releases/download"]'
     ).forEach(function(button) {
 
         button.addEventListener(
@@ -1527,7 +1524,7 @@
             function() {
 
                 console.log(
-                    "Download do Mealheiro Digital iniciado."
+                    "Download do Mealheiro Digital iniciado a partir do GitHub."
                 );
 
             }
