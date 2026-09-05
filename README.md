@@ -8,7 +8,7 @@ mealheiro-site/
 ├── css/
 │   └── style.css
 ├── js/
-│   └── script.js
+    └── script.js
 ```
 
 ## Como publicar no GitHub Pages
