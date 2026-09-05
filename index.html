@@ -9,7 +9,6 @@
     
     <title>Mealheiro Digital — Poupa de forma inteligente</title>
 
-    <!-- LIGAÇÃO AO CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -62,10 +61,10 @@
                     <div class="phone-speaker"></div>
                     <div class="screen">
                         
-                        <!-- BARRA DE STATUS (Hora e Bateria) -->
+                        <!-- STATUS BAR -->
                         <div class="status">
                             <span id="phoneTime">--:--</span>
-                            <span>🔋</span>
+                            <span>   🔋</span>
                         </div>
 
                         <!-- TOPO DA APP -->
@@ -74,7 +73,7 @@
                                 <small>Olá 👋</small>
                                 <strong>Mealheiro Digital</strong>
                             </div>
-                            <div class="avatar">€</div>
+                            <button id="resetBtn" class="reset-btn" title="Reiniciar total">↻</button>
                         </div>
 
                         <!-- SALDO -->
@@ -90,23 +89,49 @@
                             </div>
                         </div>
 
-                        <!-- SEPARADORES -->
+                        <!-- TABS (Moedas / Notas / Histórico) -->
                         <div class="phone-tabs">
-                            <b>Moedas</b>
-                            <span>Notas</span>
-                            <span>Histórico</span>
+                            <span class="tab-btn active" data-tab="coins">Moedas</span>
+                            <span class="tab-btn" data-tab="notes">Notas</span>
+                            <span class="tab-btn" data-tab="history">Histórico</span>
                         </div>
 
-                        <!-- MOEDAS INTERATIVAS -->
-                        <div class="coins" id="coinGrid">
-                            <div data-value="0.01" style="cursor:pointer">1c</div>
-                            <div data-value="0.02" style="cursor:pointer">2c</div>
-                            <div data-value="0.05" style="cursor:pointer">5c</div>
-                            <div data-value="0.10" style="cursor:pointer">10c</div>
-                            <div data-value="0.20" style="cursor:pointer">20c</div>
-                            <div data-value="0.50" style="cursor:pointer">50c</div>
-                            <div data-value="1.00" style="cursor:pointer">1€</div>
-                            <div data-value="2.00" style="cursor:pointer">2€</div>
+                        <!-- CONTEÚDO DAS TABS -->
+                        <div class="tabs-content">
+
+                            <!-- MOEDAS -->
+                            <div class="tab-content active" id="tab-coins">
+                                <div class="coins">
+                                    <div data-value="0.01">1c</div>
+                                    <div data-value="0.02">2c</div>
+                                    <div data-value="0.05">5c</div>
+                                    <div data-value="0.10">10c</div>
+                                    <div data-value="0.20">20c</div>
+                                    <div data-value="0.50">50c</div>
+                                    <div data-value="1.00">1€</div>
+                                    <div data-value="2.00">2€</div>
+                                </div>
+                            </div>
+
+                            <!-- NOTAS -->
+                            <div class="tab-content" id="tab-notes">
+                                <div class="notes">
+                                    <div data-value="5">5€</div>
+                                    <div data-value="10">10€</div>
+                                    <div data-value="20">20€</div>
+                                    <div data-value="50">50€</div>
+                                    <div data-value="100">100€</div>
+                                    <div data-value="200">200€</div>
+                                </div>
+                            </div>
+
+                            <!-- HISTÓRICO -->
+                            <div class="tab-content" id="tab-history">
+                                <div class="history-list" id="historyList">
+                                    <p class="history-empty">Ainda não há transações.</p>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -160,7 +185,6 @@
         <span>Aplicação Android</span>
     </footer>
 
-    <!-- LIGAÇÃO AO JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
