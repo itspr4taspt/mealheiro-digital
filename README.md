@@ -9,8 +9,6 @@ mealheiro-site/
 │   └── style.css
 ├── js/
 │   └── script.js
-└── downloads/
-    └── mealheiro-digital.apk   <-- coloca aqui o teu APK
 ```
 
 ## Como publicar no GitHub Pages
